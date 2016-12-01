@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册界面</title>
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+</head>
+<body>
+    <div class="header">
+        <!--天气插件-->
+        <iframe class="weather" width="300" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&color=%23FFFFFF&icon=5&py=nanjing&num=2"></iframe>
+        <h1>
+            <img class="text-logo" src="images/textlogo1.png" alt="文字logo"/>
+        </h1>
+        <ul class="nav">
+            <li><a href="index.html">主页</a></li>
+            <li><a href="news.html">最新动态</a></li>
+            <li><a href="introduction.html">社团介绍</a></li>
+            <li><a href="apartments.html">职能部门</a></li>
+            <li><a href="achievement.html">成果展示</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+    </div>
+
+    <div class="maincontent">
+        <form action="logsuccess.html" method="post">
+            <!--表格-->
+            <table class="logon">
+                <tr>
+                    <td>
+                        <label for="logon-name">用户名</label>
+                    </td>
+                    <td>
+                        <input type="text" name="logon-name" id="logon-name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="logon-password">密码</label>
+                    </td>
+                    <td>
+                        <input type="password" name="logon-password" id="logon-password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="logon-repassword">确认密码</label>
+                    </td>
+                    <td>
+                        <input type="password" name="logon-repassword" id="logon-repassword"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="logon-email">用户邮箱</label>
+                    </td>
+                    <td>
+                        <input type="text" name="logon-email" id="logon-email"/>
+                    </td>
+                </tr>
+                <tr class="logon-checkbox">
+                    <td>
+                        <input type="checkbox" id="logon-declaration" checked/>
+                    </td>
+                    <td>
+                        <label for="logon-declaration">同意 <a href="legal.html">VR空间免责声明</a></label>
+
+                    </td>
+                </tr>
+            </table>
+
+            <table class="alreadyhave">
+
+                <tr>
+                    <td>
+                        <input type="button" id="register" value="确认注册"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        已有账号？点击 <a href="login.html">登录</a>
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+    </div>
+    <div class="footer">
+        <p>
+            &copy;2016-SEU-VR-space  -  东南大学“VR空间”协会
+        </p>
+    </div>
+</body>
+</html>
