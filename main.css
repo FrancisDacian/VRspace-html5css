@@ -1,0 +1,320 @@
+/*重置*/
+html,body,h1,h2,h3,p,ol,ul,li,a{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+/*超链接处理*/
+a{
+    text-decoration: none;;
+}
+/*a:link{*/
+    /*color: darkblue;;*/
+/*}*/
+a:hover{
+    text-decoration: underline;
+    color: darkred;
+}
+/*a:active{*/
+    /*text-decoration: underline;*/
+    /*color: yellowgreen;*/
+/*}*/
+/*a:visited{*/
+    /*color: #e61911;*/
+/*}*/
+/*对超链接进行处理*/
+body{
+    /*padding: 20px;*/
+    background: aliceblue;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    ;
+}
+/*统一处理*/
+h1{
+    color: #ffffff;
+    margin: 10px 0 15px 0 ;
+    text-align: center;
+    /*居中显示*/}
+h2{
+    color: #55a7ff;
+    margin: 10px 0 20px 0;
+    border-bottom: 1px solid #cccccc;
+    padding: 3px;
+    line-height: 50px;
+    font-weight: bold;
+}
+h3{
+    color: #000000;
+    padding: 5px;
+    margin: 10px 0 20px 0;
+    line-height: 36px;
+    font-size: 20px;
+    border-bottom: 1px solid #cccccc;
+    
+}
+ul{
+    padding: 0 0 0 50px;
+}
+ol{
+    margin: 5px;
+    padding: 0 0 0 50px;
+}
+li{
+    margin: 5px;
+}
+p{
+    margin: 5px;
+}
+
+/*禁用textarea*/
+textarea{
+    resize: none;
+}
+/*特殊处理*/
+.nav{
+    padding-left: 0;
+    color: #ffffff;
+    text-align: center;
+}
+.nav li{
+    display: inline;
+}
+
+.office li{
+    display: inline;
+}
+.office{
+    padding-left: 0;
+    text-align: center;
+}
+.office a{
+    color: black;
+}
+.nav a{
+    color: #FFA405;
+}
+.nav a:visited{
+    color: #ffa405;
+}
+
+.text-logo{
+    text-align: center;
+}
+.achieve a:visited{
+    color: #ff9811;
+}
+.achieve{
+    font-size: 12px;
+}
+
+.footer{
+    padding: 10px 0 30px 0;
+}
+
+.footer p{
+    color: #afafaf;
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*网页块布局*/
+/*块1*/
+.header{
+    padding: 10px;
+    background: #000000;
+    }
+/*块2*/
+.maincontent{
+    width: 800px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    margin: 30px auto 0 auto;
+    background: #ffffff ;
+
+}
+.contactimg {
+    display: inline;
+}
+
+.achieve li{
+    list-style-type: none;
+    overflow: hidden;
+}
+.achieve img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding: 5px;
+    background-color: white;
+    margin-right: 10px;
+}
+/*logo图片*/
+.imgcenter{
+    text-align: center;
+}
+/*自媒体图片*/
+
+.imgleftcenter{
+    display: inline;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+
+}
+.imgrightcenter{
+    display: inline;
+    text-align: right;
+    padding-right: 0px;
+    padding-left: 100px;
+
+}
+
+/*表格样式*/
+.suggest{
+    width: 100%;
+}
+.suggest td{
+    padding: 5px;
+}
+.suggest .td-label{
+    width: 150px;
+    text-align: right;
+}
+.suggest .td-buttons{
+    text-align: center;
+}
+/*属性选择器*/
+.suggest input[type=text]{
+    width: 500px;
+    padding: 7px;
+    border: 2px solid #55a7ff;
+}
+.suggest textarea{
+    width: 500px;
+    padding: 7px;
+    border: 2px solid #55a7ff;
+}
+
+.suggest input[type=submit],.suggest input[type=reset]{
+    width:120px;
+    font-size: 20px;
+}
+
+/*主页面样式*/
+.homeimg{
+    background: url("images/VRdesktop1.jpg") center no-repeat;
+    height: 600px;
+    width: 100%;
+    /*
+    background: url("images/VRdesktop1.jpg" )center center no-repeat;
+    */
+    position: relative;
+}
+
+.homeimg .info{
+    background-color: rgba(0 0 0 0.5);
+
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+
+        /*透明度*/
+}
+.homeimg .info-wrap{
+    z-index: 10;    /*层数*/
+    background:url("images/VRlogo.png") 0 center no-repeat;
+    height: 200px;
+    width: 400px;
+    margin-left: 20px;
+    padding-left: 200px;
+
+
+}
+.homeimg .info-wrap h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    color: #ffffff;;
+    font-size: 28px;
+    font-weight: bold;
+    height: 40px;
+    border: 0;
+}
+.homeimg .info-wrap p{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 6px;
+}
+
+/*天气预报*/
+.weather{
+    position: absolute;
+    top: 5px;
+    right:1px;
+}
+/*视频*/
+.video-body{
+    text-align: center;
+}
+
+/*最新新闻*/
+.wechatweb{
+    position: relative;
+}
+.newstime{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.newstime h3{
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+/*登录界面*/
+.login{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    /*表格居中显示*/
+}
+.login-btn{
+    margin: 0 auto;
+    /*
+    text-align: left;
+    */
+}
+.login_icon1{
+    text-align: center;
+}
+/*主页面登录按钮*/
+.loginicon{
+    position: absolute;
+    top: 100px;
+    right: 35px;
+}
+/*注册界面*/
+.logon{
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+}
+.logon-checkbox{
+    text-align: right;
+    font-size: 14px;
+}
+
+.alreadyhave{
+    margin: 10px auto;
+    font-size: 14px;
+    text-align: center;
+}

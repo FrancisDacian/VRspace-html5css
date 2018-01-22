@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>东南大学VR空间社团-意见与建议</title>
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+</head>
+<body>
+    <div class="header">
+        <!--天气插件-->
+        <iframe class="weather" width="300" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&color=%23FFFFFF&icon=5&py=nanjing&num=2"></iframe>
+        <h1>
+            <img class="text-logo" src="images/textlogo1.png" alt="文字logo"/>
+        </h1>
+        <ul class="nav">
+            <li><a href="index.html">主页</a></li>
+            <li><a href="news.html">最新动态</a></li>
+            <li><a href="introduction.html">社团介绍</a></li>
+            <li><a href="apartments.html">职能部门</a></li>
+            <li><a href="achievement.html">成果展示</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="maincontent">
+        <h2>意见与建议</h2>
+
+        <form action="success.html" method="post">
+            <!--表格-->
+            <table class="suggest">
+                <tr>
+                    <td class="td-label">
+                        <!--文本框的处理-->
+                        <label for="suggest-name">主题</label>
+                    </td>
+                    <td>
+                        <input type="text" id="suggest-name" name="suggest-name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-label">
+                        <label for="poster-name">发布人邮箱</label>
+                    </td>
+                    <td>
+                        <input type="text" id="poster-name" name="poster-name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-label">
+                        <label for="files"> 上传相关文件</label>
+                    </td>
+                    <td>
+                        <input type="file" id="files"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-label">
+                        <label >类型选择</label>
+                    </td>
+                    <td>
+                        <!--同一属性，互斥选择-->
+                        <input type="radio" name="type" id="type1"checked value="1"/><label for="type1"  >关于VR</label>
+                        <input type="radio" name="type" id="type2" value="2"/><label for="type2">关于社团</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-label">
+                        <label for="suggest-content">正文</label>
+                    </td>
+                    <td>
+                        <textarea  id="suggest-content" cols="60" rows="10"></textarea>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="td-label">
+                    </td>
+                    <td>
+                        <label for="newsletter">是否订阅邮件</label>
+                        <input type="checkbox" id="newsletter" checked/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td-buttons">
+                        <input type="submit" />
+                        <input type="reset" value="重新填写"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="footer">
+        <p>
+            &copy;2016-SEU-VR-space  -  东南大学“VR空间”协会
+        </p>
+    </div>
+</body>
+</html>
